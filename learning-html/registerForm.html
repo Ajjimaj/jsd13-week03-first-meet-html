@@ -17,62 +17,90 @@
       }
     </style>
   </head>
+
   <body>
-    <h1>Ajjma</h1>
-    <p>Subscribe Here</p>
-    <form action="/api/user" method="get">
-      <p>Name</p>
-      <input type="text" name="cname" required />
+    <h1>AJJI Entertainment Subscription</h1>
+    <p>Please fill your information</p>
+    <form action="" method="get">
+      <p>First Name</p>
+      <label for="">
+        <input type="text" name="fname" placeholder="Rhaenyra" required />
+      </label>
+
+      <p>Last Name</p>
+      <label for="">
+        <input type="text" name="lname" placeholder="Targaryen" required />
+      </label>
+
+      <p>Password</p>
+      <label for="">
+        <input type="password" required />
+      </label>
 
       <p>E-mail</p>
-      <input type="email" />
+      <label>
+        <input type="email" placeholder="example@domain.com" required />
+      </label>
 
-      <!-- soup options  -->
-      <p>Select Soup</p>
+      <!-- package options -->
+      <p>Choose Your Plan</p>
 
       <label>
-        <input type="radio" name="soup" />
-        Mala Soup
+        <input type="radio" name="package" required />
+        Free
       </label>
+      <br />
 
       <label>
-        <input type="radio" name="soup" />
-        หม่าล่านมสด
+        <input type="radio" name="package" required />
+        Premium 999 Bath - Lifetime
       </label>
 
-      <label>
-        <input type="radio" name="soup" />
-        Japanese Black Soup
-      </label>
-
-      <input type="radio" name="soup" id="sukisoup" />
-      <label for="sukisoup">ซุปสุกี้</label>
-
-      <!-- ingreditents options-->
-      <p>Select Ingredients</p>
+      <!-- your interesting options -->
+      <p>What's your interest?</p>
       <label for="">
-        <input type="checkbox" name="meat" value="pork" />
-        Pork
+        <input type="checkbox" name="interest" value="movie" />
+        Watch Movie
       </label>
+      <br />
 
       <label for="">
-        <input type="checkbox" name="meat" value="chicken" />
-        Chicken
+        <input type="checkbox" name="interest" value="music" />
+        Listening Music
       </label>
+      <br />
 
       <label for="">
-        <input type="checkbox" name="vegetable" value="mushroom" />
-        Mushroom
+        <input type="checkbox" name="interest" value="game" />
+        Play Game
       </label>
+      <br />
 
       <label for="">
-        <input type="checkbox" name="vegetable" value="bokchoy" />
-        Bokchoy
+        <input type="checkbox" name="interest" value="sport" />
+        Sport
       </label>
 
       <!-- submit form-->
-      <p>Let's enjoy your meal!</p>
-      <button>Submit</button>
+      <p>Sumit the form for Enjoy!</p>
+      <button
+        style="
+          font-family:
+            system-ui,
+            -apple-system,
+            BlinkMacSystemFont,
+            &quot;Segoe UI&quot;,
+            Roboto,
+            Oxygen,
+            Ubuntu,
+            Cantarell,
+            &quot;Open Sans&quot;,
+            &quot;Helvetica Neue&quot;,
+            sans-serif;
+        "
+      >
+        Sent
+      </button>
     </form>
   </body>
 </html>
