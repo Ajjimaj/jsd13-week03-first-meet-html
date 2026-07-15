@@ -18,33 +18,64 @@
     </style>
   </head>
 
-  <body>
-    <h1>AJJI Entertainment Subscription</h1>
-    <p>Please fill your information</p>
+  <!-- body setting -->
+  <body style="text-align: center">
+    <h1 style="color: darkolivegreen;">Smurf Entertainment Subscription</h1>
+    <br>
+
+    <h2 style="font-size: larger; font-weight: 500;">Please fill your information</h2>
     <form action="" method="get">
-      <p>First Name</p>
-      <label for="">
-        <input type="text" name="fname" placeholder="Rhaenyra" required />
+    
+    <div>
+      <strong style="font-weight: 500;">First Name</strong>
+      <label style="width: 100px; font-weight: bold; font-size: 16px;">
+        <input
+          type="text"
+          name="fname"
+          placeholder="Rhaenyra"
+          style="padding: 6px; border-radius: 5px; border:1px solid #716a6a"
+          required
+        />
       </label>
+    </div>
 
-      <p>Last Name</p>
-      <label for="">
-        <input type="text" name="lname" placeholder="Targaryen" required />
-      </label>
-
-      <p>Password</p>
-      <label for="">
-        <input type="password" required />
-      </label>
-
-      <p>E-mail</p>
+      <p><strong style="font-weight: 500;">Last Name</strong>
       <label>
-        <input type="email" placeholder="example@domain.com" required />
+        <input 
+          type="text"
+          name="lname"
+          placeholder="Targaryen"
+          style="padding: 6px; border-radius: 5px; border:1px solid #716a6a"
+          required
+        />
+      </p>
       </label>
 
-      <!-- package options -->
-      <p>Choose Your Plan</p>
+      <p><strong style="font-weight: 500;">Password</strong>
+      <label>
+        <input 
+          type="password"
+          style="padding: 6px; border-radius: 5px; border:1px solid #716a6a" 
+          required
+        />
+      </p>
+      </label>
 
+      <p><strong style="font-weight: 500;">E-mail</strong>
+      <label>
+        <input 
+          type="email"
+          placeholder="example@domain.com"
+          style="padding: 6px; border-radius: 5px; border:1px solid #716a6a"
+          required />
+      </p>
+      </label>
+      <br>
+
+    <!-- package options -->
+    <h2 style="font-size: larger; font-weight: 500;">Choose Your Plan</h2>
+    
+    <div style="display: inline-block; text-align: left; margin-bottom: 10px"
       <label>
         <input type="radio" name="package" required />
         Free
@@ -55,11 +86,14 @@
         <input type="radio" name="package" required />
         Premium 999 Bath - Lifetime
       </label>
+    </div>
 
-      <!-- your interesting options -->
-      <p>What's your interest?</p>
-      <label for="">
-        <input type="checkbox" name="interest" value="movie" />
+    <!-- your interesting options -->
+    <h2 style="font-size: larger; font-weight: 500;">What's your interest?</h2>
+
+    <div style="display: inline-block; text-align: left; margin-bottom: 10px">
+    <label for="">
+      <input type="checkbox" name="interest" value="movie" />
         Watch Movie
       </label>
       <br />
@@ -80,27 +114,11 @@
         <input type="checkbox" name="interest" value="sport" />
         Sport
       </label>
+    </div>
 
       <!-- submit form-->
-      <p>Sumit the form for Enjoy!</p>
-      <button
-        style="
-          font-family:
-            system-ui,
-            -apple-system,
-            BlinkMacSystemFont,
-            &quot;Segoe UI&quot;,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            &quot;Open Sans&quot;,
-            &quot;Helvetica Neue&quot;,
-            sans-serif;
-        "
-      >
-        Sent
-      </button>
+      <p>Let's enjoy your plan!</p>
+      <button style="font-family: monospace">Sent</button>
     </form>
   </body>
 </html>
